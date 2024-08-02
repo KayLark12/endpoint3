@@ -5,7 +5,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // URL endpoint untuk menerima notifikasi dari Midtrans
-app.post('/midtrans-notification', (req, res) => {
+app.post('/', (req, res) => {
     const notification = req.body;
 
     // Log data notifikasi untuk verifikasi
